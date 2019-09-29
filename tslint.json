@@ -1,6 +1,9 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ],
   "jsRules": {},
   "rules": {
     "member-access": false,
@@ -8,27 +11,48 @@
     "jsx-no-lambda": false,
     "object-literal-sort-keys": false,
     "ordered-imports": false,
+    "interface-name": false,
     "arrow-return-shorthand": true,
     "only-arrow-functions": true,
     "prefer-for-of": true,
     "typedef": true,
-    "quotemark": [true, "single"],
+    "quotemark": [
+      true,
+      "single"
+    ],
     "ban-types": {
       "options": [
-        ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+        [
+          "Object",
+          "Avoid using the `Object` type. Did you mean `object`?"
+        ],
         [
           "Function",
           "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
         ],
-        ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
-        ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
-        ["String", "Avoid using the `String` type. Did you mean `string`?"],
-        ["Symbol", "Avoid using the `Symbol` type. Did you mean `symbol`?"]
+        [
+          "Boolean",
+          "Avoid using the `Boolean` type. Did you mean `boolean`?"
+        ],
+        [
+          "Number",
+          "Avoid using the `Number` type. Did you mean `number`?"
+        ],
+        [
+          "String",
+          "Avoid using the `String` type. Did you mean `string`?"
+        ],
+        [
+          "Symbol",
+          "Avoid using the `Symbol` type. Did you mean `symbol`?"
+        ]
       ]
     }
   },
   "rulesDirectory": [],
   "linterOptions": {
-    "exclude": ["node_modules/**/*.ts"]
+    "exclude": [
+      "node_modules/**/*.ts"
+    ]
   }
 }
